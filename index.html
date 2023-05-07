@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Evolver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Word Evolver</h1>     
+    <div id="game-container">
+        <div id="letters-container">
+        </div>
+        <div id="min-length-container">
+            必要最低文字数:<span id="min-length">3</span>
+        </div>
+        <input type="text" id="word-input" placeholder="英単語を入力...">
+        <button id="submit-word">単語を送信</button>
+    </div>
+    <div id="score-container">
+        スコア: <span id="score">0</span>
+    </div>
+    <div id="timer-container">
+        残り時間: <span id="timer">120</span> 秒
+    </div>
+    <div id="rules-container">
+        <h2>ゲームのルール</h2>
+        <ol>
+          <li>ゲーム開始時に、プレイヤーにはランダムに選ばれた3つの文字が与えられます。</li>
+          <li>プレイヤーは、与えられた文字を使用して、できるだけ多くの有効な単語を作成することが目的です。単語は最低3文字でなければなりません。</li>
+          <li>正解数が増えるたびに最低必要文字数が増加します。</li>
+          <li>単語が作成されるたびに、新しいランダムな文字が与えられ、プレイヤーはその新しい文字を使ってさらに単語を作成する必要があります。</li>
+          <li>各単語は、一度だけ使用できます。同じ単語を繰り返し使用することはできません。</li>
+          <li>プレイヤーは、2分以内ににできるだけ多くの単語を作成することを目指します。制限時間が経過すると、ゲームが終了します。</li>
+          <li>単語の長さに応じてポイントが付与されます。例えば、3文字の単語は1ポイント、4文字の単語は2ポイント、5文字の単語は3ポイントなどです。</li>
+          <li>ゲーム終了時に、プレイヤーは作成した単語のリストと獲得したポイントを確認できます。</li></ol>
+      </div>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <h2 id="modal-title">ゲームオーバー</h2>
+          <p id="modal-message">あなたのスコアは<span id="final-score">0</span>です。</p>
+          <button id="retry-button">もう一度プレイ</button>
+        </div>
+      </div>      
+    <script src="script.js"></script>
+</body>
+</html>

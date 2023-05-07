@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d2d;
+    color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+    margin: 0;
+  }  
+  
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #letters-container {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #3b3b3b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #4b87e8;
+  }  
+  
+  #word-input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #3b3b3b;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 0.5rem;
+    width: 200px;
+    outline: none;
+  }
+  
+  #submit-word-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4b87e8;
+    color: #e8e8e8;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #submit-word-button:hover {
+    background-color: #3a6ecf;
+  }
+  
+  #score-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #score {
+    color: #4b87e8;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #3b3b3b;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  #modal-title {
+    margin-bottom: 1rem;
+    color: #e8e8e8;
+  }
+  
+  #final-score {
+    color: #4b87e8;
+  }
+  
+  .retry-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4b87e8;
+    color: #e8e8e8;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #3a6ecf;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
